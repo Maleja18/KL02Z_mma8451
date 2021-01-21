@@ -1,3 +1,6 @@
-08:24:48 **** Incremental Build of configuration Release for project FRDML02Z_mma8451 ****
+18:52:08 **** Incremental Build of configuration Release for project FRDML02Z_mma8451 ****
+make -r -j2 all 
+make: Nothing to be done for 'all'.
+18:52:50 **** Incremental Build of configuration Release for project FRDML02Z_mma8451 ****
 make -r -j2 all 
 make: Nothing to be done for 'all'.
