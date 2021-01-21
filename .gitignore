@@ -2,7 +2,10 @@
 *.metadata
 *.mcuxpressoide_packages_support
 *.launch
+
 /mma_8451 propio//
+# excluye carpeta freeRTOS
+/freeRTOS_TADS_logs/
 
 /mma_8451 propio/debug/
 /mma_8451 propio/release/
