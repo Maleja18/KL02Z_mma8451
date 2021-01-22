@@ -1,6 +1,11 @@
-18:52:08 **** Incremental Build of configuration Release for project FRDML02Z_mma8451 ****
+20:30:07 **** Incremental Build of configuration Release for project FRDML02Z_mma8451 ****
 make -r -j2 all 
-make: Nothing to be done for 'all'.
-18:52:50 **** Incremental Build of configuration Release for project FRDML02Z_mma8451 ****
-make -r -j2 all 
-make: Nothing to be done for 'all'.
+Building file: ../source/FRDML02Z_mma8451.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -DCPU_MKL02Z32VFM4 -DCPU_MKL02Z32VFM4_cm0plus -DFSL_RTOS_BM -DSDK_OS_BAREMETAL -DSDK_DEBUGCONSOLE=0 -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=1 -DCR_PRINTF_CHAR -DSDK_DEBUGCONSOLE_UART -D__MCUXPRESSO -D__USE_CMSIS -DNDEBUG -D__REDLIB__ -I"C:\nxp\mma_8451 propio\FRDML02Z_mma8451\board" -I"C:\nxp\mma_8451 propio\FRDML02Z_mma8451\sdk_hal" -I"C:\nxp\mma_8451 propio\FRDML02Z_mma8451\source" -I"C:\nxp\mma_8451 propio\FRDML02Z_mma8451" -I"C:\nxp\mma_8451 propio\FRDML02Z_mma8451\drivers" -I"C:\nxp\mma_8451 propio\FRDML02Z_mma8451\CMSIS" -I"C:\nxp\mma_8451 propio\FRDML02Z_mma8451\utilities" -I"C:\nxp\mma_8451 propio\FRDML02Z_mma8451\startup" -Os -fno-common -g -Wall -c -ffunction-sections -fdata-sections -ffreestanding -fno-builtin -fmacro-prefix-map="../source/"=. -mcpu=cortex-m0plus -mthumb -D__REDLIB__ -fstack-usage -specs=redlib.specs -MMD -MP -MF"source/FRDML02Z_mma8451.d" -MT"source/FRDML02Z_mma8451.o" -MT"source/FRDML02Z_mma8451.d" -o "source/FRDML02Z_mma8451.o" "../source/FRDML02Z_mma8451.c"
+../source/FRDML02Z_mma8451.c:45:10: fatal error: sdk_hal_uart0.h: No such file or directory
+   45 | #include "sdk_hal_uart0.h"
+      |          ^~~~~~~~~~~~~~~~~
+compilation terminated.
+make: *** [source/subdir.mk:26: source/FRDML02Z_mma8451.o] Error 1
+"make -r -j2 all" terminated with exit code 2. Build might be incomplete.
