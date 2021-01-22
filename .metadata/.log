@@ -651,3 +651,36 @@ Binding(ALT+ARROW_UP,
 		,,true),null),
 	org.eclipse.ui.defaultAcceleratorConfiguration,
 	org.eclipse.ui.textEditorScope,,,system)
+
+!ENTRY com.nxp.swtools.periphs.model.yaml.converters 4 0 2021-01-21 18:32:32.372
+!MESSAGE No MCU was loaded from YAML
+
+!ENTRY com.nxp.swtools.mux.view 4 0 2021-01-21 18:36:22.585
+!MESSAGE Failed to switch to function 'PinsFunc_1'. Function not found.
+
+!ENTRY org.eclipse.cdt.ui 4 0 2021-01-21 18:40:39.172
+!MESSAGE Error in CDT UI during reconcile
+!STACK 1
+C Model Exception: C Model Status [Element sdk_hal_gpio.c does not exist.]
+	at org.eclipse.cdt.internal.core.model.CElement.newNotPresentException(CElement.java:486)
+	at org.eclipse.cdt.internal.core.model.TranslationUnit.makeConsistent(TranslationUnit.java:583)
+	at org.eclipse.cdt.internal.core.model.ReconcileWorkingCopyOperation.executeOperation(ReconcileWorkingCopyOperation.java:65)
+	at org.eclipse.cdt.internal.core.model.CModelOperation.execute(CModelOperation.java:346)
+	at org.eclipse.cdt.internal.core.model.CModelOperation.run(CModelOperation.java:613)
+	at org.eclipse.cdt.internal.core.model.CModelOperation.runOperation(CModelOperation.java:641)
+	at org.eclipse.cdt.internal.core.model.WorkingCopy.reconcile(WorkingCopy.java:365)
+	at org.eclipse.cdt.internal.ui.text.CReconcilingStrategy.reconcile(CReconcilingStrategy.java:79)
+	at org.eclipse.cdt.internal.ui.text.CReconcilingStrategy.reconcile(CReconcilingStrategy.java:64)
+	at org.eclipse.cdt.internal.ui.text.CompositeReconcilingStrategy.reconcile(CompositeReconcilingStrategy.java:89)
+	at org.eclipse.cdt.internal.ui.text.CCompositeReconcilingStrategy.reconcile(CCompositeReconcilingStrategy.java:90)
+	at org.eclipse.jface.text.reconciler.MonoReconciler.process(MonoReconciler.java:76)
+	at org.eclipse.cdt.internal.ui.text.CReconciler.process(CReconciler.java:346)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:210)
+!SUBENTRY 1 org.eclipse.cdt.core 4 969 2021-01-21 18:40:39.235
+!MESSAGE Element sdk_hal_gpio.c does not exist.
+
+!ENTRY com.nxp.swtools.tee.controller 4 0 2021-01-21 18:40:40.136
+!MESSAGE Unexpected event object: null
+
+!ENTRY org.eclipse.cdt.core 1 0 2021-01-21 19:26:49.513
+!MESSAGE Indexed 'FRDML02Z_mma8451' (27 sources, 54 headers) in 13,1 sec: 7.316 declarations; 16.361 references; 1 unresolved inclusions; 66 syntax errors; 83 unresolved names (0,35 %)
